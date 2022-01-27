@@ -24,17 +24,39 @@ Install the dependencies & start the developmental server.
 ```sh
 cd fundingBlock
 npm install
-npm run dev
 ```
 
-For production environments...
+## Compilation
 
 ```sh
-#COMING SOON
+node ethereum/compile.js
 ```
 
-> Note: `ethereum/KEYS.js` is required for Seed phrase & Infura Api.
-Added to gitignore currently for obvious reasons ;)
+## Deployment
+
+```sh
+cp ethereum/KEYS.json.example ethereum/KEYS.json
+```
+
+Put Your Seed phrase and Infura API key and then run
+
+```sh
+node ethereum/deploy.js
+```
+
+Copy the contract address and put it in ethereum/factory.js
+
+## Testing
+
+```sh
+node test/Campaign.test.js
+```
+
+## Server deployment
+
+```sh
+npm run dev
+```
 
 Verify the deployment by navigating to your server address in
 your preferred browser.
@@ -62,7 +84,3 @@ Create a funding request
 ## License
 
 GNU GPL V3
-
-**Free Software, Hell Yeah!**
-
-PS: Shout out to https://dillinger.io/ for making it easier to generate this readme, I'm not well versed in markdown :)

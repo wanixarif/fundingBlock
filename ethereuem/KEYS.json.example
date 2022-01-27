@@ -1,0 +1,4 @@
+{
+  "SEED": "You have to paste your seed here it will be used for deployment only",
+  "INFURA_API": "https://rinkeby.infura.io/v3/YourRinkebyAPI_KEY"
+}
